@@ -9,8 +9,13 @@ function loadContactContent() {
     const contenth4 = document.createElement('h4')
     contenth4.textContent = 'Contact Information'
 
-    
+    const contentP = document.createElement('p')
+    contentP.textContent =  "Phone : 111-111-1111 \
+                            Call for Takeout"
+
+
     contactContent.appendChild(contenth4)
+    contactContent.appendChild(contentP)
 
     contactTab.appendChild(contactContent)
 }

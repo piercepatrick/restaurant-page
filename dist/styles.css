@@ -1,3 +1,10 @@
+body {
+    background-image: url('Nightshade_2019_Frank-Lee_2018-12-14-NightShade-117.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
 #welcome-content {
     display: flex;
     flex-direction: column;
@@ -5,7 +12,58 @@
     justify-content: center;
 }
 
-#welcome-image {
-    height: 75vh;
-    width: 100%;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   background-color: #C2EABA;
+   padding-top: 50px;
+   line-height: 1.4;
+   font-size: 1.4em;
+}
+
+.tabs {
+	clear: both;
+	position: relative;   
+   max-width: 650px;
+   margin: 0 auto;
+   /* you can either manually set a min-height here or do it via JS ---> */
+}
+
+.tab {
+	float: left;
+}
+
+.tab label {
+	margin-right: 20px;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	color: rgb(255, 255, 255);
+   text-transform: uppercase;
+}
+
+.tab [type=radio] {
+	display: none;   
+}
+
+.tab__content {
+   position: relative;
+	top: 60px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: opacity .2s cubic-bezier(.42,0,.34,1.01);
+	opacity: 0;
+}
+
+[type=radio]:checked ~ label {
+	border-bottom: 2px solid #1d1d1d;
+	color: #000000;
+	z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .tab__content {
+	z-index: 1;
+	opacity: 1;
 }

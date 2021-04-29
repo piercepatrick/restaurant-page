@@ -10,8 +10,12 @@ function loadMenuContent() {
     contenth4.textContent = 'Menu Information'
 
     
-    menuContent.appendChild(contenth4)
+    const contentP = document.createElement('p')
+    contentP.textContent = 'Burgers, Pizza, Wings, AND ICE CREAM!'
 
+    
+    menuContent.appendChild(contenth4)
+    menuContent.appendChild(contentP)
     
     menuTab.appendChild(menuContent)
 }

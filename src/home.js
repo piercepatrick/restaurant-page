@@ -10,9 +10,9 @@ const LoadContents = ()  => {
     const welcomeH1 = document.createElement('h1')
     welcomeH1.textContent = 'Welcome to my Restaurant!'
     
-    const welcomeImg = document.createElement('img')
-    welcomeImg.setAttribute('id','welcome-image')
-    welcomeImg.setAttribute('src','Nightshade_2019_Frank-Lee_2018-12-14-NightShade-117.jpg')
+    //const welcomeImg = document.createElement('img')
+    //welcomeImg.setAttribute('id','welcome-image')
+    //welcomeImg.setAttribute('src','Nightshade_2019_Frank-Lee_2018-12-14-NightShade-117.jpg')
     
     const welcomeP = document.createElement('p')
     welcomeP.textContent = 'The perfect restaurant for every occasion.: The best restaurant, no matter your mood or craving. \
@@ -20,7 +20,7 @@ const LoadContents = ()  => {
                             Join our mission to create perfection and let us show you what it feels like.'
     
     welcomeContent.appendChild(welcomeH1)
-    welcomeContent.appendChild(welcomeImg)
+    //welcomeContent.appendChild(welcomeImg)
     welcomeContent.appendChild(welcomeP)
     
     content.appendChild(welcomeContent)
@@ -36,7 +36,6 @@ const LoadContents = ()  => {
     radioInput.setAttribute('type','radio')
     radioInput.setAttribute('name','tabgroup')
     radioInput.setAttribute('id','tab-1')
-    //radioInput.checked = true
 
     const radioLabel = document.createElement('label')
     radioLabel.setAttribute('for','tab-1')
