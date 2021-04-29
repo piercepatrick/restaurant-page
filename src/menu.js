@@ -1,5 +1,4 @@
 import { menuTab } from './home.js'
-//const menuTab = document.getElementById('menu-tab')
 
 function loadMenuContent() {
     const menuContent = document.createElement('div')

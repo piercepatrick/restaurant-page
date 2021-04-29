@@ -1,5 +1,4 @@
 import { contactTab } from './home.js'
-//const contactTab = document.getElementById('contact-tab')
 
 function loadContactContent() {
     const contactContent = document.createElement('div')
