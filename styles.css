@@ -27,7 +27,6 @@ body {
 	position: relative;   
    max-width: 650px;
    margin: 0 auto;
-   /* you can either manually set a min-height here or do it via JS ---> */
 }
 
 .tab {
