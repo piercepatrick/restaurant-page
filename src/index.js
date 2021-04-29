@@ -1,6 +1,6 @@
 import { LoadContents } from './home.js'
 import { loadContactContent, deleteContactContent } from './contact.js'
-
+import { loadMenuContent, deleteMenuContent } from './menu.js'
 
 let displaying = 'none'
 LoadContents()

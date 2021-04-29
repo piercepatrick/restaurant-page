@@ -43,6 +43,7 @@ const LoadContents = ()  => {
 
     const menuTab = document.createElement('div')
     menuTab.setAttribute('class','tab')
+    menuTab.setAttribute('id','menu-tab')
 
     const menuInput = document.createElement('input')
     menuInput.setAttribute('type','radio')
