@@ -1,3 +1,3 @@
-import { LoadContents } from './OnPageLoad.js'
+import { LoadContents } from './home.js'
 
 LoadContents()
