@@ -1,3 +1,6 @@
+let contactTab
+let menuTab
+
 const LoadContents = ()  => {
     const content = document.querySelector('#content')
 
@@ -25,7 +28,7 @@ const LoadContents = ()  => {
     const tabs = document.createElement('div')
     tabs.className = 'tabs'
 
-    const contactTab = document.createElement('div')
+    contactTab = document.createElement('div')
     contactTab.setAttribute('class','tab')
     contactTab.setAttribute('id','contact-tab')
 
@@ -41,7 +44,7 @@ const LoadContents = ()  => {
 
 
 
-    const menuTab = document.createElement('div')
+    menuTab = document.createElement('div')
     menuTab.setAttribute('class','tab')
     menuTab.setAttribute('id','menu-tab')
 
@@ -71,9 +74,9 @@ const LoadContents = ()  => {
     const contenth4 = document.createElement('h4')
     contenth4.textContent = 'Contact Information'
 
-    
-
 
 }
 
-export { LoadContents }
+export { LoadContents}
+export { contactTab }
+export { menuTab }

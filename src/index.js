@@ -2,7 +2,9 @@ import { LoadContents } from './home.js'
 import { loadContactContent, deleteContactContent } from './contact.js'
 import { loadMenuContent, deleteMenuContent } from './menu.js'
 
-let displaying = 'none'
+console.log('test1')
+let displaying
+displaying = 'none'
 LoadContents()
 
 const contactRadio = document.getElementById('tab-1')
@@ -23,11 +25,12 @@ function displayContact() {
 }
 
 function displayMenu() {
+    console.log(displaying)
     if (displaying == 'none') {
         loadMenuContent()
     }
     else if (displaying == 'contact') {
-        deleteContactContent
+        deleteContactContent()
         loadMenuContent()
     }
     displaying = 'menu'

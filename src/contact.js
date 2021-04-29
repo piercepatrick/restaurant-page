@@ -1,4 +1,5 @@
-const contactTab = document.getElementById('contact-tab')
+import { contactTab } from './home.js'
+//const contactTab = document.getElementById('contact-tab')
 
 function loadContactContent() {
     const contactContent = document.createElement('div')
@@ -15,7 +16,7 @@ function loadContactContent() {
 }
 
 function deleteContactContent() {
-    contactContent = document.getElementById('contact-content')
+    let contactContent = document.getElementById('contact-content')
     contactTab.removeChild(contactContent)
 }
 

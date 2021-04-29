@@ -1,4 +1,5 @@
-const menuTab = document.getElementById('menu-tab')
+import { menuTab } from './home.js'
+//const menuTab = document.getElementById('menu-tab')
 
 function loadMenuContent() {
     const menuContent = document.createElement('div')
@@ -16,7 +17,7 @@ function loadMenuContent() {
 }
 
 function deleteMenuContent() {
-    menuContent = document.getElementById('menu-content')
+    let menuContent = document.getElementById('menu-content')
     menuTab.removeChild(menuContent)
 }
 
