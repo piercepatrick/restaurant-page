@@ -1,1 +1,3 @@
-console.log("pierce")
+import { LoadContents } from './OnPageLoad.js'
+
+LoadContents()
